@@ -1,0 +1,21 @@
+
+# …Ë÷√±‡¬Î∏Ò Ω
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  banner:
+    charset: UTF-8
+  messages:
+    encoding: UTF-8
+  profiles:
+    active: local
+
+
+

@@ -1,0 +1,12 @@
+spring:
+  #数据库脚本的编码设置为UTF-8
+  datasource:
+    sql-script-encoding: UTF-8
+    #数据源配置，pom中需要引入对应的数据库jdbc依赖
+    continue-on-error: true
+    url: jdbc:mysql://192.168.28.189:3306/fire-gms?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai
+    username: firetest
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #如果数据库为非嵌入式数据库，这个属性第一次启动的时候一定要设置为ALWAYS，用于初始化数据，初始化好后，可以关闭，也可以不关闭，有自己决定 NEVER
+    initialization-mode: NEVER
